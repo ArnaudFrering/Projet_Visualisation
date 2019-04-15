@@ -1,31 +1,51 @@
 ---
 title: "Projet Visualisation"
-author: "Arnaud Frering"
-date: "12 avril 2019"
-output: html_document
+author: "[Arnaud Frering](https://github.com/ArnaudFrering)"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+mail: "arnaud.frering@mines-ales.org"
+linkedin: "arnaud-frering-b52150161"
+github: "ArnaudFrering"
+output:
+  epuRate::PCTG:
+    toc: TRUE
+    number_sections: FALSE
+    code_folding: "hide"
 ---
 
-```{r setup, include=FALSE}
+```{r , include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(warning = FALSE)
+knitr::opts_chunk$set(message = FALSE)
 ```
 
-##### ah oui oui
-## R Markdown
+```{r ,}
+#Chargement des librairies
+library(ggplot2) 
+library(dplyr)
+library(gapminder) 
+library(hrbrthemes)
+library(forcats)
+```
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+## Importation des données 
 
 ```{r cars}
-summary(cars)
+data <- read.csv("https://raw.githubusercontent.com/ArnaudFrering/Projet_Visualisation/master/Tableau_Points_Fantasy.csv", header = TRUE, sep = ";")
+
+head(data)
+nrow(data)
 ```
 
-## Including Plots
+##Premiers graphs
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
+```{r ,}
 plot(pressure)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r ,}
+plot(pressure)
+```
+
+```{r ,}
+plot(pressure)
+```
