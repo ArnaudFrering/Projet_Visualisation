@@ -1,6 +1,6 @@
 ---
 title: "Projet Visualisation"
-author: "[Arnaud Frering](https://github.com/ArnaudFrering)"
+author: "[Arnaud Frering, Stéfan Baudier, Thomas Rodriguez](https://github.com/ArnaudFrering)"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 mail: "arnaud.frering@mines-ales.org"
 linkedin: "arnaud-frering-b52150161"
@@ -48,4 +48,4 @@ plot(pressure)
 
 ```{r ,}
 plot(pressure)
-```
+
