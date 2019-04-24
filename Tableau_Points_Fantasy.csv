@@ -1,62 +1,62 @@
 Joueur;Equipe;Moyenne;Minimum;Maximum;Mediane;Ecart-type
-Davis;New Orleans Pelicans;52,63;18;79;53;14,76
-Giannis;Milwaukee Bucks;48,53;17;84;47;14,41
-Durant;Golden State Warriors;46,72;11;83;44;15,02
-Harden;Houston Rockets;46,06;9;82;45;16,7
-Embiid;Philadelphia 76ers;45,74;12;85;48;16,75
-LeBron;Los Angeles Lakers;44,21;16;85;43;14,31
-Kawhi;Toronto Raptors;42,44;21;62;42;11
-Curry;Golden State Warriors;40,16;5;79;43;18,94
-George;Oklahoma City Thunder;39,29;9;77;39;16,27
-Lillard;Portland Trail Blazers;37,94;12;65;40;14,98
-Griffin;Detroit Pistons;37,48;2;74;38;15,58
-Vucevic;Orlando Magic;37,28;5;64;37;13,39
-DeRozan;San Antonio Spurs;37,17;13;66;34;13,66
-KAT;Minnesota Timberwolves;36,56;13;68;35;15,09
-Westbrook;Oklahoma City Thunder;35,88;13;58;41;13,3
-Capela;Houston Rockets;35,64;16;61;35;12,18
-Jokic;Denver Nuggets;35,22;11;86;32;16,94
-Drummond;Detroit Pistons;35,13;11;56;35;13,2
-Irving;Boston Celtics;34,94;1;69;35;15,15
-Gobert;Utah Jazz;34,91;4;54;35;10,46
-Simmons;Philadelphia 76ers;34,86;9;57;35;11,01
-T. Harris;Philadelphia 76ers;34,24;9;63;33;13,62
-Kemba;Charlotte Hornets;33,28;-9;84;35;16,94
-Randle;New Orleans Pelicans;33,15;-4;59;34;14,55
-Ayton;Phoenix Suns;32,8;5;58;31;12,4
-Booker;Phoenix Suns;32,8;5;57;31;13,79
-Jrue ;New Orleans Pelicans;32,37;7;57;33;11,32
-Aldridge;San Antonio Spurs;32,31;9;61;33;12,91
-LaVine;Chicago Bulls;31,9;11;53;32;11,4
-Colins;Atlanta Hawks;31,71;8;53;34;12,05
-Beal;Washington Wizards;31,69;8;58;30;11,71
-Butler;Philadelphia 76ers;31,61;2;68;31;17,76
-Gallinari;LA Clippers;31,06;4;60;32;12,41
-Gasol;Memphis Grizzlies ;31,03;8;52;31;11,34
-Adams;Oklahoma City Thunder;30,81;14;51;31;9,26
-DeAndre;Dallas Mavericks;30,7;6;50;30;10,31
-Sabonis;Indiana Pacers;29,82;12;55;30;9,67
-Wall;Washington Wizards;29,81;2;67;30;14,96
-Harrell;LA Clippers;29,65;9;56;30;13,09
-Fox;Sacramento Kings;29,49;-6;70;31;14,38
-Conley;Memphis Grizzlies ;29,3;7;57;29;11,75
-Nurkic;Portland Trail Blazers;29,18;4;49;29;11,93
-Oladipo;Indiana Pacers;29,17;5;51;30;12,5
-Whiteside;Miami Heat;28,96;4;67;28;12,7
-Kanter;Portland Trail Blazers;28,53;8;58;29;11,48
-Doncic;Dallas Mavericks;28,28;5;49;29;11,61
-Howard;Washington Wizards;28;16;52;25;11,83
-Ibaka;Toronto Raptors;27,32;7;64;27;10,91
-Rose;Minnesota Timberwolves;26,97;2;70;29;14,05
-Tristan;Cleveland Cavaliers;26,96;2;53;26;13,37
-Siakam;Toronto Raptors;26,57;5;45;26;9,34
-TJ Warren;Phoenix Suns;26,28;-1;50;30;14,44
-McCollum;Portland Trail Blazers;25,53;0;61;26;13,36
-Paul;Houston Rockets;25,5;4;50;24;12,37
-Kuzma;Los Angeles Lakers;24,94;5;51;25;10,81
-Klay;Golden State Warriors;23,97;1;69;23;13,14
-Hardaway Jr;New York Knicks;23,35;-3;48;21;13,77
-Murray;Denver Nuggets;23,13;-5;64;24;13,71
-Favors;Utah Jazz;22;6;46;21;8,21
-Trae;Atlanta Hawks;19,74;-2;52;17;12,79
-Forbes;San Antonio Spurs;15,66;-6;47;14;11,23
+Davis;New Orleans Pelicans;52.63;18;79;53;14.76
+Giannis;Milwaukee Bucks;48.53;17;84;47;14.41
+Durant;Golden State Warriors;46.72;11;83;44;15.02
+Harden;Houston Rockets;46.06;9;82;45;16.7
+Embiid;Philadelphia 76ers;45.74;12;85;48;16.75
+LeBron;Los Angeles Lakers;44.21;16;85;43;14.31
+Kawhi;Toronto Raptors;42.44;21;62;42;11
+Curry;Golden State Warriors;40.16;5;79;43;18.94
+George;Oklahoma City Thunder;39.29;9;77;39;16.27
+Lillard;Portland Trail Blazers;37.94;12;65;40;14.98
+Griffin;Detroit Pistons;37.48;2;74;38;15.58
+Vucevic;Orlando Magic;37.28;5;64;37;13.39
+DeRozan;San Antonio Spurs;37.17;13;66;34;13.66
+KAT;Minnesota Timberwolves;36.56;13;68;35;15.09
+Westbrook;Oklahoma City Thunder;35.88;13;58;41;13.3
+Capela;Houston Rockets;35.64;16;61;35;12.18
+Jokic;Denver Nuggets;35.22;11;86;32;16.94
+Drummond;Detroit Pistons;35.13;11;56;35;13.2
+Irving;Boston Celtics;34.94;1;69;35;15.15
+Gobert;Utah Jazz;34.91;4;54;35;10.46
+Simmons;Philadelphia 76ers;34.86;9;57;35;11.01
+T. Harris;Philadelphia 76ers;34.24;9;63;33;13.62
+Kemba;Charlotte Hornets;33.28;-9;84;35;16.94
+Randle;New Orleans Pelicans;33.15;-4;59;34;14.55
+Ayton;Phoenix Suns;32.8;5;58;31;12.4
+Booker;Phoenix Suns;32.8;5;57;31;13.79
+Jrue ;New Orleans Pelicans;32.37;7;57;33;11.32
+Aldridge;San Antonio Spurs;32.31;9;61;33;12.91
+LaVine;Chicago Bulls;31.9;11;53;32;11.4
+Colins;Atlanta Hawks;31.71;8;53;34;12.05
+Beal;Washington Wizards;31.69;8;58;30;11.71
+Butler;Philadelphia 76ers;31.61;2;68;31;17.76
+Gallinari;LA Clippers;31.06;4;60;32;12.41
+Gasol;Memphis Grizzlies ;31.03;8;52;31;11.34
+Adams;Oklahoma City Thunder;30.81;14;51;31;9.26
+DeAndre;Dallas Mavericks;30.7;6;50;30;10.31
+Sabonis;Indiana Pacers;29.82;12;55;30;9.67
+Wall;Washington Wizards;29.81;2;67;30;14.96
+Harrell;LA Clippers;29.65;9;56;30;13.09
+Fox;Sacramento Kings;29.49;-6;70;31;14.38
+Conley;Memphis Grizzlies ;29.3;7;57;29;11.75
+Nurkic;Portland Trail Blazers;29.18;4;49;29;11.93
+Oladipo;Indiana Pacers;29.17;5;51;30;12.5
+Whiteside;Miami Heat;28.96;4;67;28;12.7
+Kanter;Portland Trail Blazers;28.53;8;58;29;11.48
+Doncic;Dallas Mavericks;28.28;5;49;29;11.61
+Howard;Washington Wizards;28;16;52;25;11.83
+Ibaka;Toronto Raptors;27.32;7;64;27;10.91
+Rose;Minnesota Timberwolves;26.97;2;70;29;14.05
+Tristan;Cleveland Cavaliers;26.96;2;53;26;13.37
+Siakam;Toronto Raptors;26.57;5;45;26;9.34
+TJ Warren;Phoenix Suns;26.28;-1;50;30;14.44
+McCollum;Portland Trail Blazers;25.53;0;61;26;13.36
+Paul;Houston Rockets;25.5;4;50;24;12.37
+Kuzma;Los Angeles Lakers;24.94;5;51;25;10.81
+Klay;Golden State Warriors;23.97;1;69;23;13.14
+Hardaway Jr;New York Knicks;23.35;-3;48;21;13.77
+Murray;Denver Nuggets;23.13;-5;64;24;13.71
+Favors;Utah Jazz;22;6;46;21;8.21
+Trae;Atlanta Hawks;19.74;-2;52;17;12.79
+Forbes;San Antonio Spurs;15.66;-6;47;14;11.23
