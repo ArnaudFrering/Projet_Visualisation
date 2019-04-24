@@ -3,7 +3,7 @@
 Ce projet a été réalisé par Stéfan BAUDIER, Arnaud FRERING et Thomas RODRIGUEZ.
 
 Lien vers le site hébergeant la version html du Rmd :
-
+https://arnaudfrering.github.io/Projet_Visualisation/
 
 Nous nous sommes intéressés aux performance en fantasy league de différents joueurs de basket-ball en NBA.
 Les perfomances sotn calculées d'après la formule : 
