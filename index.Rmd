@@ -27,7 +27,7 @@ library(forcats)
 ## Importation des données 
 
 
-On importe les données des deux csv représentant les performances en termes de points fantasy afin d'en trouver des tendances
+On importe les données des deux csv représentant les performances en termes de points fantasy afin d'en trouver des tendances.
 
 ```{r cars}
 #on importe les deux dataframe
