@@ -32,8 +32,10 @@ library(forcats)
 ```{r cars}
 data <- read.csv("https://raw.githubusercontent.com/ArnaudFrering/Projet_Visualisation/master/Tableau_Points_Fantasy.csv", header = TRUE, sep = ";")
 
-head(data)
-nrow(data)
+data_boxplot <- read.csv("https://raw.githubusercontent.com/ArnaudFrering/Projet_Visualisation/master/Donnees_boxplot.csv")
+
+head(data_boxplot)
+nrow(data_boxplot)
 ```
 
 ##Premiers graphs
