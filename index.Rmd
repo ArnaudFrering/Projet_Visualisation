@@ -1,15 +1,18 @@
 ---
 title: "Projet Visualisation"
-author: "[Arnaud Frering, Stéfan Baudier, Thomas Rodriguez](https://github.com/ArnaudFrering)"
+author: '[Arnaud Frering, Stéfan Baudier, Thomas Rodriguez](https://github.com/ArnaudFrering)'
 date: "`r format(Sys.time(), '%d %B %Y')`"
-mail: "arnaud.frering@mines-ales.org"
-linkedin: "arnaud-frering-b52150161"
-github: "ArnaudFrering"
 output:
+  html_document:
+    df_print: paged
+    toc: yes
   epuRate::PCTG:
-    toc: TRUE
-    number_sections: FALSE
-    code_folding: "hide"
+    code_folding: hide
+    number_sections: no
+    toc: yes
+mail: arnaud.frering@mines-ales.org
+linkedin: arnaud-frering-b52150161
+github: ArnaudFrering
 ---
 
 ```{r , include=FALSE}
@@ -23,7 +26,6 @@ knitr::opts_chunk$set(message = FALSE)
 library(ggplot2) 
 library(dplyr)
 library(gapminder) 
-library(hrbrthemes)
 library(forcats)
 ```
 
@@ -31,7 +33,7 @@ library(forcats)
 
 ```{r cars}
 data <- read.csv("https://raw.githubusercontent.com/ArnaudFrering/Projet_Visualisation/master/Tableau_Points_Fantasy.csv", header = TRUE, sep = ";")
-
+head(data, 10)
 data2<- read.csv("https://raw.githubusercontent.com/ArnaudFrering/Projet_Visualisation/master/Donnees_boxplot.csv", header = FALSE, sep = ";")
 
 data_boxplot <- as.data.frame(t(data2))
@@ -54,15 +56,25 @@ rbind(head(data, 10)) %>%
   ggplot(aes( x=Joueur, y=Moyenne )) +
     geom_point()+
     geom_segment(aes( x=Joueur, y=0,  xend=Joueur, yend = Moyenne ),color = "black")+
-    coord_flip()
+    coord_flip()+
+    annotate(geom = "point", x = "Durant", y = 46.72, shape = 21, color = "blue", size = 5, fill = "yellow")+
+    annotate(geom = "point", x = "Curry", y = 40.16, shape = 21, color = "blue", size = 5, fill = "yellow")+
+    annotate(geom = "text", x = "Durant", y = 50, label = "46.72", color = "blue") +
+    annotate(geom = "text", x = "Curry", y = 43.5, label = "40.16", color = "blue") 
 ```
 
 ```{r ,}
 # basic scatterplot
 data_3 %>%
   ggplot(aes(Match, Durant), ylbl ="Performance") +
-  geom_line(color = "green")+
-  geom_line(aes(Match, Curry), color = "blue")
+  geom_line(color = "red")+
+  geom_line(aes(Match, Curry), color = "blue")+
+  annotate(geom = "text", x = 35, y = 49.72, label = "Durant", color = "red")+
+  annotate(geom = "text", x = 35, y = 46.72, label = "av = 46.72", color = "red")+
+  annotate(geom = "text", x = 35, y = 43.16, label = "Curry", color = "blue")+
+  annotate(geom = "text", x = 35, y = 40.16, label = "av = 40.16", color = "blue")+
+  ylab("Performance")
+  
 ```
 
 ```{r ,}
