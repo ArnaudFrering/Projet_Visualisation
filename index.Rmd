@@ -32,22 +32,38 @@ library(forcats)
 ```{r cars}
 data <- read.csv("https://raw.githubusercontent.com/ArnaudFrering/Projet_Visualisation/master/Tableau_Points_Fantasy.csv", header = TRUE, sep = ";")
 
-data_boxplot <- read.csv("https://raw.githubusercontent.com/ArnaudFrering/Projet_Visualisation/master/Donnees_boxplot.csv")
+data2<- read.csv("https://raw.githubusercontent.com/ArnaudFrering/Projet_Visualisation/master/Donnees_boxplot.csv", header = FALSE, sep = ";")
 
-head(data_boxplot)
-nrow(data_boxplot)
+data_boxplot <- as.data.frame(t(data2))
+data_3 <- as.data.frame(data_boxplot[2:64,c(1,3,8)])
+names(data_3) <- c("Match", "Durant", "Curry")
+data_3$"Durant"<-as.numeric(as.character(data_3$"Durant"))
+data_3$"Curry"<-as.numeric(as.character(data_3$"Curry"))
+data_3$"Match"<-as.numeric(as.character(data_3$"Match"))
+  
+head(data_3)
 ```
 
 ##Premiers graphs
 
 ```{r ,}
-plot(pressure)
+rbind(head(data, 10)) %>%
+  arrange(Moyenne) %>%
+  mutate(Joueur=factor(Joueur, Joueur)) %>%
+  # Make the plot
+  ggplot(aes( x=Joueur, y=Moyenne )) +
+    geom_point()+
+    geom_segment(aes( x=Joueur, y=0,  xend=Joueur, yend = Moyenne ),color = "black")+
+    coord_flip()
 ```
 
 ```{r ,}
-plot(pressure)
+# basic scatterplot
+data_3 %>%
+  ggplot(aes(Match, Durant), ylbl ="Performance") +
+  geom_line(color = "green")+
+  geom_line(aes(Match, Curry), color = "blue")
 ```
 
 ```{r ,}
-plot(pressure)
 
