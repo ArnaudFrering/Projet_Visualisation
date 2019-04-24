@@ -1,18 +1,13 @@
 ---
 title: "Projet Visualisation"
-author: '[Arnaud Frering, Stéfan Baudier, Thomas Rodriguez](https://github.com/ArnaudFrering)'
+author: "[Arnaud Frering, Stéfan Baudier, Thomas Rodriguez](https://github.com/ArnaudFrering)"
 date: "`r format(Sys.time(), '%d %B %Y')`"
+github: "ArnaudFrering"
 output:
-  html_document:
-    df_print: paged
-    toc: yes
   epuRate::PCTG:
-    code_folding: hide
-    number_sections: no
-    toc: yes
-mail: arnaud.frering@mines-ales.org
-linkedin: arnaud-frering-b52150161
-github: ArnaudFrering
+    toc: TRUE
+    number_sections: FALSE
+    code_folding: "hide"
 ---
 
 ```{r , include=FALSE}
@@ -31,9 +26,12 @@ library(forcats)
 
 ## Importation des données 
 
+
+On importe les données des deux csv représentant les performances en termes de points fantasy afin d'en trouver des tendances
+
 ```{r cars}
 data <- read.csv("https://raw.githubusercontent.com/ArnaudFrering/Projet_Visualisation/master/Tableau_Points_Fantasy.csv", header = TRUE, sep = ";")
-head(data, 10)
+
 data2<- read.csv("https://raw.githubusercontent.com/ArnaudFrering/Projet_Visualisation/master/Donnees_boxplot.csv", header = FALSE, sep = ";")
 
 data_boxplot <- as.data.frame(t(data2))
@@ -43,10 +41,13 @@ data_3$"Durant"<-as.numeric(as.character(data_3$"Durant"))
 data_3$"Curry"<-as.numeric(as.character(data_3$"Curry"))
 data_3$"Match"<-as.numeric(as.character(data_3$"Match"))
   
-head(data_3)
 ```
 
-##Premiers graphs
+
+
+## Représentation graphique des données
+
+Premièrement nous affichons les dix joueurs ayant les meilleures moyennes de points fantasy, donc ceux qui sont le plus intéressant à jouer dans la fantasy league.
 
 ```{r ,}
 rbind(head(data, 10)) %>%
@@ -63,6 +64,13 @@ rbind(head(data, 10)) %>%
     annotate(geom = "text", x = "Curry", y = 43.5, label = "40.16", color = "blue") 
 ```
 
+On remarque que deux des 10 joueurs ayant la meilleure moyenne appartiennent à la même équipe : Kevin Durant et Stephen Curry
+
+On peut se demander comment ses deux joueurs arrivent à créer autant de points fantasy en jouant en même temps.
+
+On choisit donc de représenter leurs performances (venant du deuxième jeu de données) afin de voir si quand l'un des deux joueurs performe, l'autre contre-performe ou si les deux arrivent à faires des grosses performances en même temps
+
+
 ```{r ,}
 # basic scatterplot
 data_3 %>%
@@ -77,5 +85,6 @@ data_3 %>%
   
 ```
 
-```{r ,}
+On remarque qu'il n'y a pas de vraie réponse à notre questionnement, et donc que durant certains matchs les deux joueurs arrivent à performer en même temps (comme au match numéro 20 par exemple) et qu'à d'autres occasions les deux ne performent pas en même temps. 
 
+On remarque également que durant les derniers matchs enregistrés, Curry n'a pas joué à cause d'une bessure et que c'est durant ces matchs que Durant fait la pire performance de sa saison.
